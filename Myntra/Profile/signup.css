@@ -1,0 +1,190 @@
+/* signup.css - Add your signup page styles here */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #fdeff4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 32px 0 32px;
+    background: transparent;
+}
+
+#logo img {
+    height: 48px;
+    width: auto;
+    margin-right: 16px;
+}
+
+#nav_bar {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav_bar li {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#nav_bar li a {
+    color: #3e4152;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#nav_bar li a:hover {
+    color: #ff3f6c;
+}
+
+#nav_bar #studio span {
+    color: #ff3f6c;
+    font-size: 0.8rem;
+    margin-left: 2px;
+    text-transform: uppercase;
+}
+
+#search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 32px;
+}
+
+#search_bar {
+    width: 350px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+    outline: none;
+}
+
+#search_icon {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-left: none;
+    padding: 10px 14px;
+    border-radius: 0 4px 4px 0;
+    font-size: 1.1rem;
+    color: #555;
+    cursor: pointer;
+}
+
+#right_icon {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+#right_icon > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.95rem;
+    color: #3e4152;
+    cursor: pointer;
+}
+
+#reggDropdown {
+    position: relative;
+}
+
+#drop {
+    display: none;
+    position: absolute;
+    top: 32px;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 4px;
+    z-index: 10;
+    min-width: 120px;
+}
+
+#reggDropdown:hover #drop {
+    display: flex;
+    flex-direction: column;
+}
+
+#drop .dropList {
+    padding: 10px 16px;
+    color: #3e4152;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+#drop .dropList:hover {
+    background: #f7f7f7;
+    color: #ff3f6c;
+}
+
+#toggle {
+    display: none;
+}
+
+.signup-container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 32px 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.signup-container h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #ff3f6c;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 10px 0 18px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.signup-container button {
+    width: 100%;
+    padding: 12px;
+    background: #ff3f6c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.signup-container button:hover {
+    background: #e73362;
+}
+
+.signup-container .login-link {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.signup-container .login-link:hover {
+    text-decoration: underline;
+}
